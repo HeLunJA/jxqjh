@@ -1,28 +1,21 @@
 {
-	"scripts": {
-		"lint:eslint": "eslint --fix --ext \"src/**/*.{vue,less,css,scss}\"",
-		"lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-		"lint:stylelint": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
-		"gc": "git add -A && git-cz && git pull && git push"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"@vue/eslint-config-prettier": "^7.0.0",
-		"babel-eslint": "^10.1.0",
-		"eslint": "^8.24.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-vue": "^9.5.1",
-		"husky": "^8.0.1",
-		"lint-staged": "^13.0.3",
-		"prettier": "^2.7.1",
-		"stylelint": "^14.12.1",
-		"stylelint-config-prettier": "^9.0.3",
-		"stylelint-config-standard": "^28.0.0",
-		"stylelint-order": "^5.0.0"
-	}
+  "scripts": {
+    "lint:eslint": "eslint --fix --ext \"./**/*.{vue,less,css,scss,js}\"",
+    "lint:prettier": "prettier --write --loglevel warn \"./**/*.{js,json,css,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.24.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.5.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.12.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-order": "^5.0.0"
+  }
 }
